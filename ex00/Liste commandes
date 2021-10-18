@@ -1,0 +1,38 @@
+./covers$ mkdir Constructeurs
+./covers$ mkdir ./Constructeurs/Sony
+./covers$ mkdir ./Constructeurs/Nintendo
+./covers$ mkdir .Constructeurs/Microsoft
+./covers$ cd Constructeurs/Sony/
+./covers/Constructeurs/Sony$ mkdir Consoles
+./covers/Constructeurs/Sony$ cd Consoles/
+./covers/Constructeurs/Sony/Consoles$ mkdir PS4
+./covers/Constructeurs/Sony/Consoles$ mkdir PS5
+./covers/Constructeurs/Sony/Consoles$ mkdir ../Consoles_portables
+./covers/Constructeurs/Sony/Consoles$ cd ../../
+./covers/Constructeurs$ cd Nintendo/
+./covers/Constructeurs/Nintendo$ mkdir Consoles
+./covers/Constructeurs/Nintendo$ mkdir Consoles/Gamecube
+./covers/Constructeurs/Nintendo$ mkdir Consoles_portables
+./covers/Constructeurs/Nintendo$ mkdir ./Consoles_portables/GameBoy
+./covers/Constructeurs/Nintendo/Consoles_portables$ cd ../..
+./covers/Constructeurs$ cd Microsoft/
+./covers/Constructeurs/Microsoft$ mkdir Consoles
+./covers/Constructeurs/Microsoft$ mkdir Consoles/Xbox
+./covers/Constructeurs/Microsoft$ mkdir Consoles/Xbox360
+./covers/Constructeurs/Microsoft$ cd ..
+./covers/Constructeurs$ mkdir Sega
+./covers/Constructeurs$ mkdir Sega/Consoles
+./covers/Constructeurs$ cd Sega/Consoles/
+./covers/Constructeurs/Sega/Consoles$ mkdir Dreamcast
+./covers/Constructeurs$ cd ../../
+./ mv playstation_4.* ./covers/Constructeurs/Sony/Consoles/PS4/
+./ mv playstation_5.* ./covers/Constructeurs/Sony/Consoles/PS5/
+./ mv gc* ./covers/Constructeurs/Nintendo/Consoles/Gamecube/
+./ mv g* ./covers/Constructeurs/Nintendo/Consoles_portables/GameBoy/
+./ mv xbox_360.fableiii.jpg ./covers/Constructeurs/Microsoft/Consoles/Xbox/
+./ mv x360_call* ./covers/Constructeurs/Microsoft/Consoles/Xbox360/
+./ mv dc_* ./covers/Constructeurs/Sega/Consoles/Dreamcast/
+./ mv ps4_fifa14.jpg ./covers/Constructeurs/Sony/Consoles/PS4/
+
+
+
