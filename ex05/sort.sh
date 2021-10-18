@@ -1,8 +1,9 @@
 #!/bin/sh
 rm -rf php_remote_2019.csv && rm -rf javascript_villeurbanne_charbonnieres.csv && rm -rf david.csv && rm -rf mails_gex.csv && rm -rf mails_charbonnieres_remote.csv && rm -rf python_2008.csv
 
-grep 'PHP' it_alumni.csv >> tamp.csv
-grep '2019' tamp.csv >> php_remote_2019.csv
+grep 'PHP' it_alumni.csv >> temp.csv
+grep '2019' temp.csv >> temp2.csv
+grep 'Remote' temp2.csv >> php_remote_2019.csv
 lines=$((`wc -l < "php_remote_2019.csv"`))
 rm -rf php_remote_2019.csv
 echo $lines > php_remote_2019.csv
@@ -26,4 +27,4 @@ lines=$((`wc -l < "python_2008.csv"`))
 rm -rf python_2008.csv
 echo $lines > python_2008.csv
 
-rm -rf tamp.csv && rm -rf a.csv && rm -rf b.csv && rm -rf c.csv
+rm -rf temp.csv && temp2.csv && rm -rf a.csv && rm -rf b.csv && rm -rf c.csv
