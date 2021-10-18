@@ -27,4 +27,4 @@ lines=$((`wc -l < "python_2008.csv"`))
 rm -rf python_2008.csv
 echo $lines > python_2008.csv
 
-rm -rf temp.csv && temp2.csv && rm -rf a.csv && rm -rf b.csv && rm -rf c.csv
+rm -rf temp.csv temp2.csv a.csv b.csv c.csv
