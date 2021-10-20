@@ -1,2 +1,2 @@
 grep 'Officer' ./tcpd_department.csv >> temp.csv
-grep '8' temp.csv >> tcpd_expert_officer.txt
+awk -F ',' 'BEGIN {max = 0} {if ($3>max && $2=="Officer") {max=$3; officerMax=$0}} END {print officerMax}' tcpd_department.csv
